@@ -1,0 +1,18 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/meditation?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&serverTimezone=Asia/Shanghai
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: zxk..20030711
+#  redis:
+#    host: 127.0.0.1
+#    port: 6379
+#    password:
+
+mybatis-plus:
+  type-aliases-package: com.groupwork.meditation.entity # 别名扫描包
+  mapper-locations: classpath:mapper/*.xml # mapper映射文件
+
